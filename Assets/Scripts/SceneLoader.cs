@@ -5,22 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] float delayBeforeNextLevel = 2f;
+    [SerializeField] float delayBeforeNextLevel = 1.5f;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
-    // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LoadNextLevel());
+        Invoke("LoadNextLevel", delayBeforeNextLevel);
     }
 
-    private IEnumerator LoadNextLevel()
+    private void LoadNextLevel()
     {
-        yield return new WaitForSeconds(delayBeforeNextLevel);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
