@@ -141,10 +141,25 @@ MonoBehaviour:
   speed: 10
   xRange: 5
   yRange: 4.3
+  guns:
+  - {fileID: 9187610295786802891}
+  - {fileID: 1385619332458123749}
   positionPitchFactor: -5
   controlPitchFactor: -20
   positionYawFactor: 5
   controlRollFactor: -30
+--- !u!114 &1716519296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081564273383039462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c32e59d8d92eb44b9cab9351ab55131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1385619332617691239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 7834653202167328428, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
         type: 3}
       propertyPath: m_Name
-      value: Lasers
+      value: Right Gun
       objectReference: {fileID: 0}
     - target: {fileID: 7834653202167328429, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
         type: 3}
@@ -212,8 +227,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6ab4b4153b5c824e8f458b30bae4eb2, type: 3}
+--- !u!1 &9187610295786802891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7834653202167328428, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1385619332617691239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9187610295786802890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7834653202167328429, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
@@ -294,6 +335,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e35a8d450f53acf40afd19134128d0e7, type: 3}
+--- !u!1 &8081564273383039462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5293798972479680250, guid: e35a8d450f53acf40afd19134128d0e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4129838231535570716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4774984061299100198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8868721579792778554, guid: e35a8d450f53acf40afd19134128d0e7,
@@ -310,7 +357,7 @@ PrefabInstance:
     - target: {fileID: 7834653202167328428, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
         type: 3}
       propertyPath: m_Name
-      value: Lasers (1)
+      value: Left Gun
       objectReference: {fileID: 0}
     - target: {fileID: 7834653202167328429, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
         type: 3}
@@ -367,8 +414,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834653202167328431, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6ab4b4153b5c824e8f458b30bae4eb2, type: 3}
+--- !u!1 &1385619332458123749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7834653202167328428, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
+    type: 3}
+  m_PrefabInstance: {fileID: 9187610295879335753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1385619332458123748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7834653202167328429, guid: c6ab4b4153b5c824e8f458b30bae4eb2,
